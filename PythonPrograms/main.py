@@ -7,9 +7,7 @@ def main():
 
     #object tracking
     obj_tracker = Tracker()
-    result = obj_tracker.process_video
-    
-    (frames)
+    result = obj_tracker.process_video(frames)
     output_frames = obj_tracker.draw_annotations(frames, result)
 
 
