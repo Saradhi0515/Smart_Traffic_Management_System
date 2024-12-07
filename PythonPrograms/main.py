@@ -1,5 +1,5 @@
 from utils.video_utils import read_video, save_video, detect_vehicles
-from object_tracker.tracker import Tracker
+from object_tracker.tracker_2 import Tracker
 
 def main():
 
@@ -7,7 +7,9 @@ def main():
 
     #object tracking
     obj_tracker = Tracker()
-    result = obj_tracker.detect_objects(frames)
+    result = obj_tracker.process_video
+    
+    (frames)
     output_frames = obj_tracker.draw_annotations(frames, result)
 
 
