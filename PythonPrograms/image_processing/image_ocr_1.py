@@ -29,4 +29,3 @@ img= ["C:\\Users\\pardh\\Infosys_STMS\\Smart_Traffic_Management_System\\s.png"]
 pred = pipeline.recognize(img)
 for predictions in pred:
     print(predictions)
-
