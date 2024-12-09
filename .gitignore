@@ -8,3 +8,5 @@
 /.venv
 /Internship_Artifacts
 /yolo11x.pt
+/detected_objects
+
