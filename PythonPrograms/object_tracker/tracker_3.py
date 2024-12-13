@@ -28,7 +28,7 @@ class Tracker:
     def __init__(self):
         # load models
         self.vehicle_detection_model = YOLO("yolov8x.pt")
-        self.license_plate_detector = YOLO("new_best_2nd_dec.pt")
+        self.license_plate_detector = YOLO("new_best.pt")
         self.results = {}
         self.mot_tracker = Sort()
         self.vehicles = [2, 3, 5, 7]
@@ -68,7 +68,7 @@ class Tracker:
 
                     license_plate_crop_thresh = 255 - license_plate_crop_thresh
 
-                    object_filename = f"data1/{x1}_{car_id}.jpg"
+                    object_filename = f"Output/Testing/{x1}_{car_id}.jpg"
                     cv2.imwrite(object_filename, license_plate_crop_thresh)
 
                     # read license plate number

@@ -125,7 +125,7 @@ def read_license_plate(license_plate_crop):
 
         if license_complies_format(text):
             return format_license(text), score
-
+        return text, score
     return None, None
 
 
