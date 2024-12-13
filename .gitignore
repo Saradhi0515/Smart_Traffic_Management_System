@@ -9,4 +9,11 @@
 /Internship_Artifacts
 /yolo11x.pt
 /detected_objects
-
+/best.pt
+/latest_best.pt
+/new_best_2nd_dec.pt
+/new_best.pt
+/sort
+/requirements.txt
+/test_interpolated.csv
+/test.csv
