@@ -34,7 +34,7 @@ import pytesseract
 pytesseract.pytesseract.tesseract_cmd = r"C:\Users\pardh\Tesseract-OCR\tesseract.exe"
 
 # Load image, grayscale, apply sharpening filter, Otsu's threshold
-image = cv2.imread('C:\\Users\\pardh\\Infosys_STMS\\Smart_Traffic_Management_System\\s.png')
+image = cv2.imread('C:/Users/pardh/Infosys_STMS/Smart_Traffic_Management_System/Output/Testing/noplate1.jpg')
 
 if image is None:
     print("Error: Image not found!")

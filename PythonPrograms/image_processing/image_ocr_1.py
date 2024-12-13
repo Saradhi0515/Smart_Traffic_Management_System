@@ -14,7 +14,7 @@ pipeline = image_ocr.pipeline.Pipeline()
 #         'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Boutique_Christian_Lacroix.jpg/330px-Boutique_Christian_Lacroix.jpg',
 #     ]
 # ]
-img= ["C:\\Users\\pardh\\Infosys_STMS\\Smart_Traffic_Management_System\\s.png"]
+img= ['C:/Users/pardh/Infosys_STMS/Smart_Traffic_Management_System/Output/Testing/noplate1.jpg']
 
 # Each list of predictions in prediction_groups is a list of
 # (word, box) tuples.
