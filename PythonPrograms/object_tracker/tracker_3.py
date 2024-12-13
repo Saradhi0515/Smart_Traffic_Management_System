@@ -27,8 +27,8 @@ class Tracker:
 
     def __init__(self):
         # load models
-        self.vehicle_detection_model = YOLO("yolov8x.pt")
-        self.license_plate_detector = YOLO("new_best.pt")
+        self.vehicle_detection_model = YOLO("C:/Users/pardh/Infosys_STMS/Smart_Traffic_Management_System/Requirements/yolov8x.pt")
+        self.license_plate_detector = YOLO("C:/Users/pardh/Infosys_STMS/Smart_Traffic_Management_System/Requirements/new_best_2nd_dec.pt")
         self.results = {}
         self.mot_tracker = Sort()
         self.vehicles = [2, 3, 5, 7]
@@ -82,4 +82,4 @@ class Tracker:
                                                                         'text_score': license_plate_text_score}}
 
         # write results
-        write_csv(self.results, './test.csv')
+        write_csv(self.results, 'C:/Users/pardh/Infosys_STMS/Smart_Traffic_Management_System/Output/Results/test_5.csv')

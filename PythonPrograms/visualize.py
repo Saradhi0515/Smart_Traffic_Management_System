@@ -4,17 +4,17 @@ import cv2
 import numpy as np
 import pandas as pd
 
-results = pd.read_csv('test_interpolated1.csv')
+results = pd.read_csv('C:/Users/pardh/Infosys_STMS/Smart_Traffic_Management_System/test_interpolated.csv')
 
 # load video
-video_path = 'data/main.mp4'
+video_path = 'C:/Users/pardh/Infosys_STMS/Smart_Traffic_Management_System/Data/Video/Traffic_05.mp4'
 cap = cv2.VideoCapture(video_path)
 
 fourcc = cv2.VideoWriter_fourcc(*'mp4v')  # Specify the codec
 fps = cap.get(cv2.CAP_PROP_FPS)
 width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-out = cv2.VideoWriter('./out2.mp4', fourcc, fps, (width, height))
+out = cv2.VideoWriter('C:/Users/pardh/Infosys_STMS/Smart_Traffic_Management_System/Output/Output_05.avi', fourcc, fps, (width, height))
 
 license_plate = {}
 for car_id in np.unique(results['car_id']):
