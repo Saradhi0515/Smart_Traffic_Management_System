@@ -3,8 +3,7 @@
 import cv2
 from ultralytics import YOLO
 
-model = YOLO('yolo11x.pt')
-print(model.names)
+model = YOLO('C:\\Users\\pardh\\Infosys_STMS\\Smart_Traffic_Management_System\\Requirements\\yolo11x.pt')
 
 webcamera = cv2.VideoCapture(0)
 # webcamera.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
