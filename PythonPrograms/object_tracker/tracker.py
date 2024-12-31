@@ -55,15 +55,16 @@
 
 
 
+
 from ultralytics import YOLO
 import cv2
-import random 
+import random
 import os
 
 class Tracker:
 
     def __init__(self):
-        self.model = YOLO("yolo11x.pt")
+        self.model = YOLO("X:\\Infosys_STMS\\Smart_Traffic_Management_System\\Requirements\\yolo11x.pt")
 
     def detect_objects(self, frames):
 
@@ -216,25 +217,4 @@ class Tracker:
 
         cv2.destroyAllWindows()
         return output_video_frames
-
-    # def save_objects(frame, x1, y1, x2, y2, obj_id, save_directory="data/output"):
-    #     # Ensure save_directory is a string or path
-    #     if not isinstance(save_directory, (str, os.PathLike)):
-    #         raise TypeError(
-    #             f"save_directory must be a string or os.PathLike object, not {type(save_directory).__name__}")
-    #
-    #     # Create the directory if it doesn't exist
-    #     os.makedirs("data/output", exist_ok=True)
-    #
-    #     # Ensure the coordinates are scalar values
-    #     x1, y1, x2, y2 = map(lambda v: int(v.item() if hasattr(v, "item") else v), [x1, y1, x2, y2])
-    #
-    #     # Crop the frame
-    #     license_plate_crop = frame[int(y1):int(y2), int(x1): int(x2), :]
-    #
-    #     # Generate a unique filename
-    #     filename = os.path.join(save_directory, f"object_{obj_id}_{len(os.listdir(save_directory)) + 1}.png")
-    #
-    #     # Save the cropped image
-    #     cv2.imwrite(filename, crop)
-    #     print(f"Colored image saved at: {filename}")
+    

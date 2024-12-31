@@ -5,8 +5,8 @@ import os
 class Tracker:
 
     def __init__(self):
-        self.model = YOLO("yolov8x.pt")
-        self.no_plate_model = YOLO("C:\\Users\\pardh\\Infosys_STMS\\Smart_Traffic_Management_System\\Requirements\\Trained_Model_For_Testing\\new_best_2nd_dec.pt")
+        self.model = YOLO("X:\\Infosys_STMS\\Smart_Traffic_Management_System\\Requirements\\yolov8x.pt")
+        self.no_plate_model = YOLO("X:\\Infosys_STMS\\Smart_Traffic_Management_System\\Requirements\\new_best_2nd_dec.pt")
 
     # def process_video(self, frames):
     #     detections = []
@@ -66,6 +66,9 @@ class Tracker:
         valid_classes = ["car", "bus", "truck", "motorcycle", "bicycle"]
         tracked_objects = []
         counter = 0
+
+        licence_plate =""
+        licence_plate_score = 0
         for frame_idx, frame in enumerate(frames):
             results = self.model.track(frame, persist=True)[0]
             name_dict = results.names
@@ -126,10 +129,10 @@ class Tracker:
                     # Draw label and bounding box on the frame
                     cv2.putText(frame, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, object_color, 2)
                     cv2.rectangle(frame, (x1, y1), (x2, y2), object_color, 2)
-
+                    # frame = cv2.resize(frame, (1280, 720))
                     cv2.imshow("Live Camera", frame)
 
-                    if cv2.waitKey(0) == ord('q'):
+                    if cv2.waitKey(1) == ord('q'):
                         break
 
 
