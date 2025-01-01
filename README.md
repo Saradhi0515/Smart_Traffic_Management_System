@@ -71,11 +71,11 @@ Ensure the following are installed:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Saradhi0515/Smart_Traffic_Management_System.git
+   git clone https://github.com/Saradhi0515/ANPR_And_ATCC_For_Smart_Traffic_Management_System.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd Smart_Traffic_Management_System
+   cd ANPR_And_ATCC_For_Smart_Traffic_Management_System
    ```
 3. Install the required dependencies:
    ```bash
@@ -116,4 +116,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-For any issues or inquiries, feel free to reach out via the [Issues](https://github.com/Saradhi0515/Smart_Traffic_Management_System/issues) section.
+For any issues or inquiries, feel free to reach out via the [Issues](https://github.com/Saradhi0515/ANPR_And_ATCC_For_Smart_Traffic_Management_System/issues) section.
