@@ -28,11 +28,11 @@ This project leverages Deep Learning and Object Detection techniques to automate
 Here is the structure of the repository:
 
 ```
-CV_Basics/                                              # Contains basic learning of computer vision and OCR
+ipynbPrograms/CV_Basics/                                # Contains basic learning of computer vision and OCR
 Data/                                                   # Input data or videos
 Output/Results/Interpolated_results/                    # Interpolated CSV files for visualization
 ipynbPrograms/number_plate_detection_model_training/    # Files related to model training
-object_tracker/tracker_3.py                             # Main file for detection and tracking of vehicles in video
+object_tracker/tracker_3.py/                            # Main file for detection and tracking of vehicles in video
 output_videos/                                          # Result videos after running visualize.py
 Output/Results/                                         # CSV files for initial detection used for interpolation
 .testing/                                               # Code for different testing scenarios
@@ -55,7 +55,7 @@ visualize.py                                            # Visualizes video using
 ## Technologies Used
 
 - **Programming Language**: Python
-- **Libraries**: OpenCV, TensorFlow/Keras, Pandas, Numpy
+- **Libraries**: listed in `requirements.txt`
 - **Deep Learning**: Object detection models (e.g., YOLO)
 
 ## Setup Instructions
